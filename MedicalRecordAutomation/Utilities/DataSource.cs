@@ -31,5 +31,11 @@ namespace TR.MedicalRecordAutomation.Utilities
             object[] finaldata = ExcelSource.GetSheetIntoObjectArray(@"C:\SeleniumProjects\AutomationFrameworkSolution\MedicalRecordAutomation\TestData\Medical_Records.xlsx", "ValidData");
             return finaldata;
         }
+
+        public static object[] InvalidLogindata()
+        {
+            object[] finaldata = ExcelSource.GetSheetIntoObjectArray(@"C:\SeleniumProjects\AutomationFrameworkSolution\MedicalRecordAutomation\TestData\Medical_Records.xlsx", "errormessage");
+            return finaldata;
+        }
     }
 }
