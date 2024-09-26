@@ -25,8 +25,11 @@ namespace TR.MedicalRecordAutomation.Utilities
             Resultvalues[1] = datavalues2;
 
             return Resultvalues;
-
-
+        }
+        public static object[] ValidLogindata()
+        {
+            object[] finaldata = ExcelSource.GetSheetIntoObjectArray(@"C:\SeleniumProjects\AutomationFrameworkSolution\MedicalRecordAutomation\TestData\Medical_Records.xlsx", "ValidData");
+            return finaldata;
         }
     }
 }

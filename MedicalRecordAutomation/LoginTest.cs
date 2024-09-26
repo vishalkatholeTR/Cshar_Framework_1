@@ -13,7 +13,7 @@ namespace TR.MedicalRecordAutomation
     {
         //Check
           [Test]
-        [TestCaseSource(typeof(DataSource),nameof(DataSource.ValidData))]
+        [TestCaseSource(typeof(DataSource),nameof(DataSource.ValidLogindata))]
         public void ValidLoginTest(string username, string password, string expectedresult)
         {
 
